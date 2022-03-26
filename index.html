@@ -5,187 +5,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="foodzilla.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Foodzilla</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+            height: 70vh;
+            background-size: cover;
+            color: white;
+        }
+        
+        .topnav {
+            overflow: hidden;
+        }
+        
+        .topnav a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav h1 {
+            float: left;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .topnav a.active {
+            color: red;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        @media screen and (max-width: 836px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 836px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+        
+        .search {
+            color: black !important;
+            height: 50px;
+            width: 80%;
+        }
+        
+        .confined {
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+        }
+        
+        .search input {
+            height: 50px;
+            background-color: white;
+            float: center;
+            border: 2px solid white;
+            width: 65%;
+            padding: 10px;
+        }
+        
+        .search select {
+            background-color: white;
+            height: 50px;
+            float: left;
+            width: 25%;
+            border: 2px solid white;
+            border-right: 2px solid rgb(221, 215, 215);
+            border-top-left-radius: 10%;
+            border-bottom-left-radius: 10%;
+            padding: 10px;
+            /* border: 1px solid white; */
+        }
+        
+        .search button {
+            border: 2px solid white;
+            background-color: white;
+            height: 50px;
+            float: right;
+            width: 10%;
+            border-top-right-radius: 20%;
+            border-bottom-right-radius: 20%;
+            /* border: 1px solid white; */
+        }
+    </style>
 </head>
-<style>
+<header>
+    <div class="topnav" id="myTopnav">
+        <h1>Zomato</h1>
+        <a href="#">
+        </a>
+        <a href="#">Add Restaurant</a>
+        <a href="#">Login</a>
+        <a href="#" class="active">Sign Up</a>
+        <a href="javascript:void(0);" class="icon" style="font-size: 25px;" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="confined">
+        <div class="search">
+            <form action="nav.js">
+                <select name="city" id="city">
+              <option value="Delhi">
+                your city
+              </option>
+              <option value="Delhi">
+                  Delhi
+              </option>
+          </select>
+                <input type="text" placeholder="Restaurant name" id="place" autocomplete="off">
+                <button type="submit" id="search">
+                <span class="glyphicon glyphicon-search" style="font-size:30px;color: rgb(240, 1, 1);"></span>
+            </button>
+            </form>
+        </div>
+    </div>
 
-</style>
+
+
+</header>
 
 <body>
-    <header>
-        <a href="https://www.facebook.com/profile.php?id=100047805708813" target="_blank"><img src="https://i.ibb.co/QXqLTyr/facebook.png" alt="facebook" title="facebook" class="social"></a>
-        <a href="https://youtube.com/" target="_blank"><img src="https://i.ibb.co/WzD4Td7/youtube.png" alt="youtube" class="social"></a>
-        <a href="https://www.instagram.com/mohammadkaif403/" target="_blank"><img src="https://i.ibb.co/ypMfSjc/insta.png" alt="insta" title="insta" class="social"></a>
-        <div class="logo">
-            <video autoplay muted loop id="myVideo" width="100%" height="100%" style="border-radius: 7px;">
-                <source src="Foodzilla.mp4" type="video/mp4">
-              </video>
-        </div>
 
-        <h1>
-            Foodzilla
-        </h1>
-        <div class="logo1">
-            <video autoplay muted loop id="myVideo" width="100%" height="100%" style="border-radius: 7px;">
-                <source src="Pizza.mp4" type="video/mp4">
-              </video>
-        </div>
-    </header>
-    <main>
-        <div class="search">
-            <div id="logo">
-                <h1>X!</h1>
-            </div>
-            <h1 style="color: white; text-align: center;">Find the Restaurants near you </h1>
-            <div class="dropdown">
-                <select>
-                    <option>----SELECT YOUR CITY-----</option>
-                    <option>Delhi</option>
-                    <option>Mumbai</option>
-                </select>
-                <select class="restSelect">
-                    <option>----SELECT YOUR Restaurants-----</option>
-                    <option>Ama Cafe</option>
-                    <option>Hotel Taj</option>
-                </select>
-            </div>
-        </div>
-        <div class="quick-search">
-            <h1>Quick search</h1>
-            <h2>Discover Restaurants by meals</h2>
-            <div class="main">
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/74VK92z/breakfast.webp" alt="breakfast">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Breakfast</h3>
-                        </a>
-                        Enjoy your breakfast
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/bQvVp9v/lunch.webp" alt="lunch">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Lunch</h3>
-                        </a>
-                        Enjoy your Lunch
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/GCdfy3f/dinner.jpg" alt="dinner">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Dinner</h3>
-                        </a>
-                        Enjoy your Dinner
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/rZDn48q/drinks.jpg" alt="drinks">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Drinks</h3>
-                        </a>
-                        Enjoy your Drinks
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/XpNLD0H/healthy.jpg" alt="healthy">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Healthy</h3>
-                        </a>
-                        Enjoy your Healthy Foods
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="p1">
-                        <img src="https://i.ibb.co/Tbhk1Q7/bars.jpg" alt="bars">
-                    </div>
-                    <div class="p2">
-                        <a href="listing.html">
-                            <h3>Bars</h3>
-                        </a>
-                        Enjoy your Bars
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="foot">
-            <p style="margin-top: 10px; text-align: center">
-                Our Service Available in these cities :
-                <select name="City" id="City" style="width:100px; height:25px;">
-                <option value="Nil">--City--</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Delhi">Mumbai</option>
-                <option value="Delhi">Ahemdabad</option>
-                <option value="Delhi">Pune</option>
-                <option value="Delhi">Kolkata</option>
-                <option value="Delhi">Lucknow</option>
-                <option value="Delhi">Jaipur</option>
-                <option value="Delhi">Shimla</option>
-                <option value="Delhi">Chandigarh</option>
-                <option value="Delhi">Bangalore</option>
-                <option value="Delhi">Chennai</option>
-                <option value="Delhi">Prayagraj</option>
-                <option value="Delhi">Kanpur</option>
-                <option value="Delhi">Kochi</option>
-                <option value="Delhi">Thiruvananthapuram</option>
-                <option value="Delhi">Bhopal</option>
-                </select>
-            </p>
-            <div class="fetch">
-                <a href="#">
-                    <h2>About Us</h2>
-                </a>
-                <p>
-                    <h5>Established : 2014</h5>
-                    <h5>Founder : Monu </h5>
-                    <h5>Co-Founder: Sonu</h5>
-                </p>
-
-            </div>
-            <div class="fetch">
-                <a href="#">
-                    <h2>Social</h2>
-                </a>
-                <a href="#">
-                    <img src="https://i.ibb.co/8MpCWK2/twi.png" alt="Twitter">
-                </a>
-                <a href="#">
-                    <img src="https://i.ibb.co/QXqLTyr/facebook.png" style="padding: 5px;" alt="Fb">
-                </a>
-                <a href="#">
-                    <img src="https://i.ibb.co/ypMfSjc/insta.png" style="padding: 2px;" alt="Insta">
-                </a>
-
-            </div>
-            <div class="fetch">
-                <a href="#">
-                    <h2>Contact Us</h2>
-                </a>
-                <h5>Customer Support</h5>
-                <h5>Tel. : +11-75645-78994</h5>
-                <h5>Email : abc@example.com</h5>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
