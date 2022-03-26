@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="foodzilla.css">
+    <title>Foodzilla</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <a href="https://www.facebook.com/profile.php?id=100047805708813" target="_blank"><img src="https://i.ibb.co/QXqLTyr/facebook.png" alt="facebook" title="facebook" class="social"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="https://i.ibb.co/WzD4Td7/youtube.png" alt="youtube" class="social"></a>
+        <a href="https://www.instagram.com/mohammadkaif403/" target="_blank"><img src="https://i.ibb.co/ypMfSjc/insta.png" alt="insta" title="insta" class="social"></a>
+        <div class="logo">
+            <video autoplay muted loop id="myVideo" width="100%" height="100%" style="border-radius: 7px;">
+                <source src="Foodzilla.mp4" type="video/mp4">
+              </video>
+        </div>
+
+        <h1>
+            Foodzilla
+        </h1>
+        <div class="logo1">
+            <video autoplay muted loop id="myVideo" width="100%" height="100%" style="border-radius: 7px;">
+                <source src="Pancake.mp4" type="video/mp4">
+              </video>
+        </div>
+    </header>
+    <main class="content">
+        <h1 style="text-align: center; margin: 10px;">Listing Page</h1>
+        <div class="filter">
+            <h2 style="text-align: center;margin-top: 10px;">Filter</h2>
+            <h4 style="text-align: center;margin-top: 7px;">Cuisine Filter</h4>
+            <div class="food-type">
+                <input type="radio" name="food" id="all">
+                <label for="all">All</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="NorthIndian">
+                <label for="NorthIndian">North Indian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="SouthIndian">
+                <label for="SouthIndian">South Indian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Chinese">
+                <label for="Chinese">Chinese</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Italian">
+                <label for="Italian">Italian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Mexican">
+                <label for="Mexican">Mexican</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Iranian">
+                <label for="Iranian">Iranian</label>
+            </div>
+            <h4 style="text-align: center;margin-top: 7px;">Cost Filter</h4>
+            <div class="cost-range">
+                <input type="radio" name="price" id="All">
+                <label for="All">All</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="₹50-₹250">
+                <label for="₹50-₹250">₹50-₹250</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="₹251-₹500">
+                <label for="₹251-₹500">₹251-₹500</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="₹500-₹750">
+                <label for="₹500-₹750">₹500-₹750</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="₹750-₹1500">
+                <label for="₹750-₹1500">₹750-₹1500</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="₹1500-₹7500">
+                <label for="₹1500-$100">₹1500-$100</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="above">
+                <label for="above">above</label>
+            </div>
+
+        </div>
+        <div class="filter2">
+            <h2 style="text-align: center;margin-top: 10px;">Filter</h2>
+            <div class="ft">
+                <h4 style="text-align: center;margin-top: 7px;">Cuisine Filter</h4>
+                <div class="food-type">
+                    <input type="radio" name="food" id="all">
+                    <label for="all">All</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="NorthIndian">
+                    <label for="NorthIndian">North Indian</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="SouthIndian">
+                    <label for="SouthIndian">South Indian</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="Chinese">
+                    <label for="Chinese">Chinese</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="Italian">
+                    <label for="Italian">Italian</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="Mexican">
+                    <label for="Mexican">Mexican</label>
+                </div>
+                <div class="food-type">
+                    <input type="radio" name="food" id="Iranian">
+                    <label for="Iranian">Iranian</label>
+                </div>
+            </div>
+
+            <div class="fr">
+                <h4 style="text-align: center;margin-top: 7px;">Cost Filter</h4>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="All">
+                    <label for="All">All</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="₹50-₹250">
+                    <label for="₹50-₹250">₹50-₹250</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="₹251-₹500">
+                    <label for="₹251-₹500">₹251-₹500</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="₹500-₹750">
+                    <label for="₹500-₹750">₹500-₹750</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="₹751-₹1500">
+                    <label for="₹751-₹1500">₹751-₹1500</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="₹1501-₹7500">
+                    <label for="₹1501-₹7500">₹1501-₹7500</label>
+                </div>
+                <div class="cost-range">
+                    <input type="radio" name="price" id="above">
+                    <label for="above">above</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="restaurants">
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/M670rMM/pizza.webp" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Dada's Pizza</h2>
+                        <p>
+                            A-12 New Vision Colony, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>5 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i> 20 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/GCdfy3f/dinner.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Mama's Hut</h2>
+                        <p>
+                            B-24 Naveen Place, Najafgarh ,New Delhi - 110043
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i> 2 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i> 10 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/74VK92z/breakfast.webp" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Dadi's kitchen</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/external-justicon-lineal-justicon/36/000000/external-vegan-healthy-food-and-vegan-justicon-lineal-justicon.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/0X6WcZW/food1.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Damodar's Palace</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/km2Lv7T/food2.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Doda's Veg Dabha</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/external-justicon-lineal-justicon/36/000000/external-vegan-healthy-food-and-vegan-justicon-lineal-justicon.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/qYBQtCV/food3.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Don's kitchen</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/mT2vC5f/food6.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Dabi's Chicken</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/5Gcq1wT/food4.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Dadi's Chicken</h2>
+                        <p>
+                            C1-43 Katu Place, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>3.4 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>15 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/gWVMg3G/food5.jpg" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Panda's Pizza</h2>
+                        <p>
+                            R-12 New Vision Colony, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:green;"></i>6.7 km from you
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i>17 min delivery
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/vegetarian-food-symbol.png" />
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="details.html">
+                <div class="template">
+                    <div class="rest-img">
+                        <img src="https://i.ibb.co/bQvVp9v/lunch.webp" alt="pizza">
+                    </div>
+                    <div class="rest-info">
+                        <h2>Daddy's huts</h2>
+                        <p>
+                            R-12 New Vision Colony, Najafgarh ,New Delhi - 110072
+                        </p>
+                        <p>
+                            <b>Starting price</b> : ₹50
+                        </p>
+                        <p>
+                            <b>maximum price</b> :₹7500
+                        </p>
+                        <span>Rating :</span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-half checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <p>
+                            <i class="bi bi-geo-alt" style="font-size: 20px; color:red;"></i> <b>Closed</b>
+                        </p>
+                        <p>
+                            <i class="bi bi-alarm" style="font-size: 20px;"></i> -----
+                        </p>
+                        <p>
+                            <img src="https://img.icons8.com/color/36/000000/non-vegetarian-food-symbol.png" />
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <p style="margin-top: 10px; text-align: center">
+                Our Service Available in these cities :
+                <select name="City" id="City" style="width:100px; height:25px;">
+                <option value="Nil">--City--</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Delhi">Mumbai</option>
+                <option value="Delhi">Ahemdabad</option>
+                <option value="Delhi">Pune</option>
+                <option value="Delhi">Kolkata</option>
+                <option value="Delhi">Lucknow</option>
+                <option value="Delhi">Jaipur</option>
+                <option value="Delhi">Shimla</option>
+                <option value="Delhi">Chandigarh</option>
+                <option value="Delhi">Bangalore</option>
+                <option value="Delhi">Chennai</option>
+                <option value="Delhi">Prayagraj</option>
+                <option value="Delhi">Kanpur</option>
+                <option value="Delhi">Kochi</option>
+                <option value="Delhi">Thiruvananthapuram</option>
+                <option value="Delhi">Bhopal</option>
+                </select>
+            </p>
+            <div class="fetch">
+                <a href="#">
+                    <h2>About Us</h2>
+                </a>
+                <p>
+                    <h5>Established : 2014</h5>
+                    <h5>Founder : Monu </h5>
+                    <h5>Co-Founder: Sonu</h5>
+                </p>
+
+            </div>
+            <div class="fetch">
+                <a href="#">
+                    <h2>Social</h2>
+                </a>
+                <a href="#">
+                    <img src="https://i.ibb.co/8MpCWK2/twi.png" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img src="https://i.ibb.co/QXqLTyr/facebook.png" style="padding: 5px;" alt="Fb">
+                </a>
+                <a href="#">
+                    <img src="https://i.ibb.co/ypMfSjc/insta.png" style="padding: 2px;" alt="Insta">
+                </a>
+
+            </div>
+            <div class="fetch">
+                <a href="#">
+                    <h2>Contact Us</h2>
+                </a>
+                <h5>Customer Support</h5>
+                <h5>Tel. : +11-75645-78994</h5>
+                <h5>Email : abc@example.com</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
