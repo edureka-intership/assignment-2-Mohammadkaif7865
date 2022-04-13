@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!--Owl carousel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -18,49 +19,67 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
         referrerpolicy="no-referrer" />
-    <!--Owl-->
+    <!--My css-->
     <link rel="stylesheet" href="zomato.css">
     <title>Zomato</title>
     <style>
-        .last-foot-m {
-            text-align: center;
-            padding: 10px;
-            margin: 10px;
-            color: gray;
-        }
+
     </style>
 </head>
 <header>
-    <div class="topnav" id="myTopnav">
-        <h1>Zomato</h1>
-        <a href="#">
-        </a>
-        <a href="#">Add Restaurant</a>
-        <a href="#">Login</a>
-        <a href="#" class="active">Sign Up</a>
-        <a href="javascript:void(0);" class="icon" style="font-size: 25px;" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Zomato</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="#">
+                <p>log in</p>
+            </a>
+            <a href="#">
+                <p>Sign up</p>
+            </a>
+            <a href="#">
+                <p>Add restaurant</p>
+            </a>
+        </div>
     </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <div class="navbar-mine">
+        <div class="n-n-l">
+            <a href="#">
+                <h1 id="my-nav-bar"><i class="fa fa-bars" aria-hidden="true" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"></i></h1>
+            </a>
+            <a href="#" id="get-the-app">
+                <p id="phone"><i class="bi bi-download"></i> get the app</i>
+                </p>
+            </a>
+        </div>
+        <div class="n-n-r">
+            <a href="#" id="n-u-i">
+                <h5>sign up</h5>
+            </a>
+            <a href="#" id="n-u-i">
+                <h5>log in</h5>
+            </a>
+            <a href="#" id="n-u-i">
+                <h5>Add restaurant</h5>
+            </a>
+        </div>
+    </div>
+
     <div class="confined">
         <div class="instr-w-w">
-            <h2>Find the best restaurant near you</h2>
+            <h1 style="font-size: calc(70px + 3vw); font-style: italic;">Zomato</h1>
+            <p>Find the best restaurant near you</p>
         </div>
         <div class="search">
+            <!-- <div class="search-loc-logo">
+                <i class="bi bi-geo-alt-fill"></i>
+            </div> -->
             <form action="nav.js">
                 <select name="city" id="city">
               <option value="Delhi">
-                your city
+                 your city
               </option>
               <option value="Delhi">
                   Mumbai
@@ -74,7 +93,7 @@
           </select>
                 <input type="text" placeholder="Restaurant name" id="place" autocomplete="off">
                 <button type="submit" id="search">
-                <span class="glyphicon glyphicon-search" style="font-size:30px;color: rgb(240, 1, 1);"></span>
+                    <i class="bi bi-search" style="font-size:30px;color: rgb(240, 1, 1);"></i>
             </button>
             </form>
         </div>
@@ -94,8 +113,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/M670rMM/pizza.webp" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dada's Pizza</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.1 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dada's Pizza</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.1 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -103,8 +122,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/GCdfy3f/dinner.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Nana's Cuisine</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.2 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Nana's Cuisine</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.2 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -113,8 +132,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/74VK92z/breakfast.webp" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dadi's Hut </span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.7 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dadi's Hut </span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.7 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -122,8 +141,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/km2Lv7T/food2.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Don's chef</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.2 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Don's chef</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.2 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -131,8 +150,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/mT2vC5f/food6.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dadu's Kitchen</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.6 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dadu's Kitchen</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.6 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -140,8 +159,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/bQvVp9v/lunch.webp" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dhoni's Plaza</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">3.3 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dhoni's Plaza</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">3.3 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -150,8 +169,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/gWVMg3G/food5.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dada's Kitchen</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.3 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dada's Kitchen</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.3 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -160,8 +179,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/mT2vC5f/food6.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Doda's restaurant</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.0 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Doda's restaurant</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.0 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -171,8 +190,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/qYBQtCV/food3.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Dadu's Kitchen</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4/7 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Dadu's Kitchen</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4/7 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -180,8 +199,8 @@
                 <div class="item">
                     <img src="https://i.ibb.co/GCdfy3f/dinner.jpg" alt="Food">
                     <p>
-                        <span style="font-size:15px;">Doga's tofu</span>
-                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.8 <span class="glyphicon glyphicon-star" style="color: gold;"></span></span>
+                        <span>Doga's tofu</span>
+                        <span style="float:right; background-color:rgb(21, 187, 21); padding:5px;">4.8 <i class="bi bi-star-fill" style="color: gold;"></i></span>
                     </p>
                 </div>
             </a>
@@ -212,19 +231,19 @@
 
     <div class="container">
         <h2>You are searching for</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+            </div>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
 
-                <div class="item  active">
+                <div class="carousel-item  active">
                     <a href="#">
                         <img src="https://media.istockphoto.com/photos/healthy-meal-slimming-diet-plan-daily-ready-menu-background-organic-picture-id1262278902?k=20&m=1262278902&s=612x612&w=0&h=1h7asS4H7JGBjT7HsOGnX-lOB2Jui3tULUY0wW9P5RI=" alt="New York" style="width:100%; height:100%;">
                     </a>
@@ -233,7 +252,7 @@
                         <p>Enjoy your favorite Breakfast here</p>
                     </div>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <a href="#">
                         <img src="https://media.istockphoto.com/photos/breakfast-table-picture-id938158500?k=20&m=938158500&s=612x612&w=0&h=74V4bkt3QXk0mnnrwUkuEipQAF4l4F5XBNwEismwmfI=" alt="Los Angeles" style="width:100%; height:100%;">
                     </a>
@@ -243,7 +262,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="carousel-item">
                     <a href="#">
                         <img src="https://media.istockphoto.com/photos/enjoying-dinner-with-friends-picture-id500516612?k=20&m=500516612&s=612x612&w=0&h=i-CEbI3XkQApKcxcAThJBie1uxyVdDUbFrKyDgPeV4Y=" alt="Chicago" style="width:100%; height:100%;">
                     </a>
@@ -253,7 +272,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="carousel-item">
                     <a href="#">
                         <img src="https://p2d7x8x2.stackpathcdn.com/content/uploads/2017/07/round-of-drinks-640x427.jpg" alt="Chicago" style="width:100%; height:100%;">
                     </a>
@@ -268,14 +287,14 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+               <span class="carousel-control-next-icon"></span>
+            </button>
+
         </div>
     </div>
 
@@ -394,7 +413,7 @@
     <h1 style="text-align: center;">Zomato</h1>
     <div class="foot-wrap">
         <div class="foot-p-c">
-            <h3>Get to Know Us</h3>
+            <h4>Get to Know Us</h4>
             <p><a href="#">About Us</a></p>
             <p><a href="#">Careers</a></p>
             <p><a href="#">Press Releases</a></p>
@@ -406,7 +425,7 @@
             <p><a href="#"> Investor Relations</a></p>
         </div>
         <div class="foot-p-c">
-            <h3>Connect with Us</h3>
+            <h4>Connect with Us</h4>
             <p><a href="#">Facebook</a></p>
             <p><a href="#">Twitter</a></p>
             <p><a href="#">Instagram</a></p>
@@ -416,7 +435,7 @@
         </div>
         <div class="foot-p-c">
 
-            <h3>Make Money with Us</h3>
+            <h4>Make Money with Us</h4>
             <p><a href="#">Sell on Zomato</a></p>
             <p><a href="#">Sell under Zomato Accelerator</a></p>
             <p><a href="#">Zomato Global Selling</a></p>
