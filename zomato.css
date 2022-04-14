@@ -125,6 +125,16 @@ a {
     text-align: left;
 }
 
+.carousel-item {
+    width: 100%;
+    height: 50vw;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
 .foot-m {
     display: flex;
     height: 70px;
