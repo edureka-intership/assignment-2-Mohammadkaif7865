@@ -132,6 +132,7 @@ footer a {
     justify-content: space-evenly;
     align-items: flex-start;
     border-bottom: 1px solid grey;
+    font-size: calc(6px + 0.5vw) !important;
 }
 
 .foot-p-c {
@@ -160,7 +161,7 @@ footer a {
 
 .navbar-mine {
     display: flex;
-    padding: 2vw;
+    padding: 20px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
