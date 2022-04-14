@@ -49,7 +49,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vw;
+    margin-top: 100px;
 }
 
 .search input {
@@ -189,11 +189,11 @@ footer a {
 
 #demo {
     color: black;
+    width: calc(100px + 40vw);
 }
 
 #demo a {
     color: black;
-    width: calc(100px + 40vw);
 }
 
 @media screen and (min-width: 768px) {
