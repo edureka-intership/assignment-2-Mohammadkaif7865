@@ -29,19 +29,12 @@ header a {
     color: white;
 }
 
-header a:hover {
-    color: rgb(217, 203, 203);
+a:hover {
+    color: rgb(217, 203, 203) !important;
 }
 
 a {
     text-decoration: none;
-}
-
-.search {
-    color: black !important;
-    height: 50px;
-    width: 90%;
-    max-width: 800px;
 }
 
 .confined {
@@ -52,12 +45,33 @@ a {
     margin-top: 100px;
 }
 
+.search {
+    color: black !important;
+    height: 50px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.search-loc-logo {
+    width: 5%;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+    font-size: 25px;
+    color: red;
+}
+
 .search input {
     height: 50px;
     background-color: white;
     float: center;
     border: 2px solid white;
-    width: 65%;
+    width: 60%;
     padding: 10px;
 }
 
@@ -68,8 +82,6 @@ a {
     width: 25%;
     border: 2px solid white;
     border-right: 2px solid rgb(221, 215, 215);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     padding: 10px;
     /* border: 1px solid white; */
 }
@@ -173,7 +185,7 @@ footer a {
     justify-content: right;
 }
 
-.n-n-r h5 {
+.n-n-r p {
     margin-left: 2vw;
 }
 
