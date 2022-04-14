@@ -94,7 +94,25 @@ a {
     width: 10%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    /* border: 1px solid white; */
+}
+
+.gold-color {
+    color: gold;
+}
+
+.display-panel-1 {
+    font-size: calc(10px + 0.5vw);
+}
+
+.rating-owl-rest {
+    float: right;
+    background-color: rgb(67, 201, 67);
+    padding: 4px;
+}
+
+.rest-name {
+    padding: 5px;
+    font-size: calc(13px + 0.5vw) !important;
 }
 
 .instr-w-w {
