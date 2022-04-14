@@ -59,10 +59,10 @@ a {
     border-bottom-left-radius: 10px;
     background-color: white;
     height: 50px;
-    padding: 8px;
+    padding: 4px;
     position: relative;
     z-index: 2;
-    font-size: 25px;
+    font-size: calc(25px + 0.5vw);
     color: red;
 }
 
