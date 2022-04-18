@@ -221,6 +221,10 @@ footer a {
     text-align: left;
 }
 
+.dark-logo a {
+    color: black;
+}
+
 .foot-p-c img {
     max-width: 130px;
     width: 90%;
