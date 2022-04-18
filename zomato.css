@@ -250,3 +250,9 @@ footer a {
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .p-i-to {
+        width: 48%;
+    }
+}
