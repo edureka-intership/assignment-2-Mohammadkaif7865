@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +24,39 @@
     <link rel="stylesheet" href="zomato.css">
     <title>Zomato</title>
     <style>
-
+        .paths-to {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        .paths-to a {
+            color: black;
+        }
+        
+        .p-i-to {
+            width: 24%;
+            height: 100%;
+            display: inline-block;
+        }
+        
+        .p-i-to img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .p-i-to p {
+            margin-top: 2px;
+            border-radius: 10px;
+            border: 2px solid rgb(236, 228, 228);
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <header>
@@ -78,17 +111,17 @@
                     <i class="bi bi-geo-alt-fill"></i>
                 </div>
                 <select name="city" id="city">
-              <option value="Delhi">
-                 location
-              </option>
-              <option value="Delhi">
-                  Mumbai
-              </option>
-              <option value="Delhi">
-                 Kolkata
-              </option>
-              <option value="Delhi">
-                 Bangaluru
+                    <option value="Delhi">
+                        location
+                    </option>
+                    <option value="Delhi">
+                        Mumbai
+                    </option>
+                    <option value="Delhi">
+                        Kolkata
+                    </option>
+                    <option value="Delhi">
+                        Bangaluru
               </option>
           </select>
                 <input type="text" placeholder="Restaurant name" id="place" autocomplete="off">
@@ -103,10 +136,45 @@
 
 </header>
 <main>
+    <div class="paths-to">
+        <a href="#">
+            <div class="p-i-to">
+                <img src="https://i.ibb.co/FqRKP6K/pics1.jpg" alt="img">
+                <p>
+                    Order Online
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="p-i-to">
+                <img src="https://i.ibb.co/Hqz3JdK/pics2.jpg" alt="img">
+                <p>
+                    Dining Out
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="p-i-to">
+                <img src="https://i.ibb.co/4YrLy0X/pro.jpg" alt="img">
+                <p>
+                    Zomato pro
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="p-i-to">
+                <img src="https://i.ibb.co/YfZvkw2/nl.webp" alt="img">
+                <p>
+                    Nightlife
+                </p>
+            </div>
+        </a>
+    </div>
+
 
     <div class="display-panel-1" style="background-color: white; margin: 10px;">
         <div>
-            <h2 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">Explore near you</h2>
+            <h2 style="padding: 10px;">Explore near you</h2>
         </div>
         <div class="owl-carousel owl-theme" id="display-2">
             <a href="#">
@@ -228,9 +296,9 @@
             }
         })
     </script>
-
     <div class="container">
         <h2>You are searching for</h2>
+
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
             <div class="carousel-indicators">
@@ -277,8 +345,8 @@
                         <img src="https://p2d7x8x2.stackpathcdn.com/content/uploads/2017/07/round-of-drinks-640x427.jpg" alt="Chicago">
                     </a>
                     <div class="carousel-caption">
-                        <h2>Drinks</h2>
-                        <p>Enjoy your favorite Drinks here</p>
+                        <h2>Beverages</h2>
+                        <p>Enjoy your favorite Beverages here</p>
                     </div>
                 </div>
 
