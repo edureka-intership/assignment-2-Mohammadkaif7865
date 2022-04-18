@@ -29,8 +29,12 @@ header a {
     color: white;
 }
 
+header a:hover {
+    color: rgb(174, 158, 158);
+}
+
 a:hover {
-    color: rgb(217, 203, 203) !important;
+    color: black;
 }
 
 a {
@@ -200,7 +204,7 @@ a {
 }
 
 footer a {
-    color: rgb(144, 138, 138);
+    color: rgb(109, 94, 94);
 }
 
 .foot-wrap {
@@ -210,11 +214,17 @@ footer a {
     justify-content: space-evenly;
     align-items: flex-start;
     border-bottom: 1px solid grey;
-    font-size: calc(6px + 0.5vw) !important;
+    font-size: calc(8px + 0.5vw) !important;
 }
 
 .foot-p-c {
     text-align: left;
+}
+
+.foot-p-c img {
+    width: 120px;
+    display: block;
+    margin-top: 10px;
 }
 
 .we-deliver {
