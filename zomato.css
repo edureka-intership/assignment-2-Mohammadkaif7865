@@ -121,6 +121,7 @@ a {
 
 .p-i-to:hover {
     transform: scale(1.05);
+    transition: width 2s, height 2s, transform 0.5s;
 }
 
 .p-i-to img {
@@ -289,13 +290,13 @@ footer a {
     color: black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #my-nav-bar {
         display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #n-u-i {
         display: none;
     }
