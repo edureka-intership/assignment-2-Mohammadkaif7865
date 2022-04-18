@@ -222,7 +222,8 @@ footer a {
 }
 
 .foot-p-c img {
-    width: 120px;
+    max-width: 120px;
+    width: 90%;
     display: block;
     margin-top: 10px;
 }
