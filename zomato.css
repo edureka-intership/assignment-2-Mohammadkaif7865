@@ -27,7 +27,6 @@ h6 {
 
 #header-list {
     width: 100%;
-    border: 2px solid black;
 }
 
 #header-list a {
@@ -289,6 +288,85 @@ footer a {
     margin-right: 2vw;
 }
 
+.left-list-nav {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    align-items: center;
+}
+
+.left-list-nav h1 {
+    margin-right: 2vw;
+}
+
+.search-bar-listing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.search-bar-listing input {
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid rgb(243, 234, 234);
+}
+
+.search-bar-listing button {
+    height: 100%;
+    width: 40px;
+    font-size: 20px;
+    color: red;
+    background-color: white;
+    border: 2px solid rgb(243, 234, 234);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-bar-listing select {
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-right: 2px solid rgb(243, 234, 234);
+    border-top: 2px solid rgb(243, 234, 234);
+    border-bottom: 2px solid rgb(243, 234, 234);
+    border-left: 2px solid white;
+}
+
+.search-loc-logo-li {
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: 2px solid rgb(243, 234, 234);
+    border-top: 2px solid rgb(243, 234, 234);
+    border-bottom: 2px solid rgb(243, 234, 234);
+    border-right: 2px solid white;
+    background-color: white;
+    height: 100%;
+    padding: 3px;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    color: red;
+}
+
+.right-list-nav {
+    display: flex;
+    width: 20%;
+    justify-content: right;
+}
+
+.right-list-nav p {
+    margin-left: 2vw;
+}
+
 #demo {
     color: black;
     width: calc(100px + 40vw);
@@ -298,7 +376,7 @@ footer a {
     color: black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #my-nav-bar {
         display: none;
     }
@@ -307,8 +385,8 @@ footer a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #n-u-i {
+@media screen and (max-width: 769px) {
+    .n-u-i {
         display: none;
     }
     #get-the-app {
