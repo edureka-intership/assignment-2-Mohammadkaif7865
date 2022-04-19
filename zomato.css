@@ -27,6 +27,7 @@ h6 {
 
 #header-list {
     width: 100%;
+    border-bottom: 2px solid rgb(210, 199, 199);
 }
 
 #header-list a {
@@ -162,7 +163,7 @@ a {
 
 .rest-name {
     padding: 5px;
-    font-size: calc(13px + 0.5vw) !important;
+    font-size: calc(12px + 0.3vw) !important;
 }
 
 .instr-w-w {
@@ -178,29 +179,30 @@ a {
     color: black;
 }
 
-.owl-carousel .owl-stage {
-    display: flex;
-}
-
-.owl-carousel .owl-item img {
+.owl-1 .owl-item img {
     width: 100%;
     height: 200px;
+    object-fit: cover;
+    margin: auto;
     border-radius: 10%;
 }
 
-.owl-carousel .owl-item p {
+.owl-1 .owl-item p {
     margin-top: 10px;
     text-align: left;
 }
 
-.carousel-item {
-    width: 100%;
-    height: 50vw;
+.owl-2 .owl-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
+.owl-2 .owl-item p {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .foot-m {
@@ -299,21 +301,50 @@ footer a {
     margin-right: 2vw;
 }
 
+.filter-search {
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    background-color: white;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+.filter-my {
+    width: 100%;
+    height: 45px;
+    color: grey;
+    font-size: calc(10px + 0.2vw);
+    padding: 5px;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.filters {
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid rgb(227, 216, 216);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
 .search-bar-listing {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 40px;
     margin: auto;
     max-width: 800px;
-    height: 40px;
-    position: sticky;
-    top: 0px;
-    left: 0px;
+    width: 100%;
 }
 
 .search-bar-listing input {
-    width: 60%;
+    width: 65%;
     height: 100%;
     padding: 5px;
     border: 2px solid rgb(243, 234, 234);
@@ -321,6 +352,8 @@ footer a {
 
 .search-bar-listing button {
     height: 100%;
+    position: relative;
+    z-index: 2;
     width: 40px;
     font-size: 20px;
     color: red;
@@ -341,6 +374,8 @@ footer a {
 }
 
 .search-loc-logo-li {
+    position: relative;
+    z-index: 2;
     width: 30px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -376,6 +411,104 @@ footer a {
     color: black;
 }
 
+.carousel-item {
+    width: 100%;
+    height: 50vw;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Listing page css*/
+
+.paths-to-2 {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.paths-to-2 a {
+    color: black;
+}
+
+.p-i-to-2 {
+    width: 31%;
+    height: 350px;
+    margin: 3px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.p-i-to-2:hover {
+    transform: scale(1.05);
+}
+
+.p-i-to-2 img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.p-i-to-2 p {
+    position: relative;
+    height: 28%;
+    margin-top: 2px;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 228, 228);
+    text-align: left;
+    padding: 10px;
+}
+
+.offer-mm {
+    position: absolute;
+    color: white;
+    background-color: green;
+    padding: 5px;
+    z-index: 9999;
+    top: 55%;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.float-r {
+    float: right;
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.g-g-old {
+    color: gold;
+}
+
+.float-l {
+    float: left;
+}
+
+.time-mm {
+    position: absolute;
+    color: grey;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    z-index: 9999;
+    top: 55%;
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 @media screen and (min-width: 769px) {
     #my-nav-bar {
         display: none;
@@ -399,6 +532,9 @@ footer a {
 
 @media screen and (max-width: 600px) {
     .p-i-to {
+        width: 48%;
+    }
+    .p-i-to-2 {
         width: 48%;
     }
 }
