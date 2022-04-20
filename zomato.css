@@ -6,7 +6,7 @@
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial;
-    font-size: calc(12px + 0.5vw);
+    font-size: 12px;
 }
 
 h1,
@@ -27,7 +27,7 @@ h6 {
 
 #header-list {
     width: 100%;
-    border-bottom: 2px solid rgb(210, 199, 199);
+    border-bottom: 2px solid rgb(239, 234, 234);
 }
 
 #header-list a {
@@ -75,7 +75,7 @@ a {
     padding: 4px;
     position: relative;
     z-index: 2;
-    font-size: calc(25px + 0.5vw);
+    font-size: 30px;
     color: red;
 }
 
@@ -151,10 +151,6 @@ a {
     color: gold;
 }
 
-.display-panel-1 {
-    font-size: calc(10px + 0.5vw);
-}
-
 .rating-owl-rest {
     float: right;
     background-color: rgb(67, 201, 67);
@@ -163,7 +159,6 @@ a {
 
 .rest-name {
     padding: 5px;
-    font-size: calc(12px + 0.3vw) !important;
 }
 
 .instr-w-w {
@@ -195,7 +190,7 @@ a {
 .owl-2 .owl-item img {
     width: 200px;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
     margin: auto;
     border-radius: 50%;
 }
@@ -304,7 +299,7 @@ footer a {
 .filter-search {
     width: 100%;
     position: sticky;
-    z-index: 3;
+    z-index: 9;
     background-color: white;
     padding: 10px;
     top: 0px;
@@ -313,9 +308,9 @@ footer a {
 
 .filter-my {
     width: 100%;
-    height: 45px;
+    height: 50px;
+    border-bottom: 2px solid rgb(227, 216, 216);
     color: grey;
-    font-size: calc(10px + 0.2vw);
     padding: 5px;
     margin: auto;
     max-width: 800px;
@@ -394,7 +389,7 @@ footer a {
 
 .right-list-nav {
     display: flex;
-    width: 20%;
+    width: 50%;
     justify-content: right;
 }
 
@@ -458,7 +453,7 @@ footer a {
     position: relative;
 }
 
-.p-i-to-2 p {
+.p-i-to-2 .details-listing {
     position: relative;
     height: 28%;
     margin-top: 2px;
@@ -468,13 +463,31 @@ footer a {
     padding: 10px;
 }
 
+.d-l-1 {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
 .offer-mm {
     position: absolute;
     color: white;
-    background-color: green;
+    background-color: rgb(39, 190, 39);
     padding: 5px;
-    z-index: 9999;
-    top: 55%;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dependable {
+    position: absolute;
+    color: white;
+    background-color: rgb(112, 39, 190);
+    padding: 5px;
+    z-index: 2;
+    top: 60%;
     left: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -482,19 +495,36 @@ footer a {
 
 .float-r {
     float: right;
-    background-color: green;
+    height: 100%;
+    width: 30%;
+    padding: 3p;
+}
+
+.rate-my {
+    background-color: rgb(39, 190, 39);
     color: white;
     padding: 3px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .g-g-old {
     color: gold;
 }
 
+.adjust-rate {
+    padding-left: 7%;
+    padding-top: 4px;
+    font-size: 15px;
+}
+
 .float-l {
+    font-size: 15x;
     float: left;
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+    padding: 3px;
 }
 
 .time-mm {
@@ -502,7 +532,7 @@ footer a {
     color: grey;
     background-color: rgb(255, 255, 255);
     padding: 5px;
-    z-index: 9999;
+    z-index: 2;
     top: 55%;
     right: 0;
     border-top-left-radius: 5px;
@@ -528,13 +558,19 @@ footer a {
     .title-my-2 {
         display: none;
     }
+    .p-i-to-2 {
+        width: 48%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .p-i-to {
         width: 48%;
     }
+}
+
+@media screen and (max-width: 500px) {
     .p-i-to-2 {
-        width: 48%;
+        width: 98%;
     }
 }
