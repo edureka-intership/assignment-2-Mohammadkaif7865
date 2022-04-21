@@ -24,11 +24,93 @@
     <link rel="stylesheet" href="zomato.css">
     <title>Zomato</title>
     <style>
-
+        .modal-flex-body {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+        }
+        
+        .filter-p-1 {
+            width: 30%;
+            background-color: rgb(243, 239, 239);
+        }
+        
+        .filter-p-2 {
+            width: 60%;
+            padding: 10px;
+        }
+        
+        .filter-p-1 h4 {
+            padding: 10px;
+        }
+        
+        .filter-p-1 a {
+            color: black;
+        }
     </style>
 </head>
 
 <body>
+    <!--Modal area only model will be here-->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body modal-flex-body">
+                    <div class="filter-p-1">
+                        <a href="#">
+                            <h4>Sort by</h4>
+                        </a>
+                        <a href="#">
+                            <h4>Cuisine</h4>
+                        </a>
+                        <a href="#">
+                            <h4>Rating</h4>
+                        </a>
+                        <a href="#">
+                            <h4>Cost per person</h4>
+                        </a>
+                        <a href="#">
+                            <h4>More filters</h4>
+                        </a>
+                    </div>
+                    <div class="filter-p-2">
+                        <p>
+                            <input type="radio" id="popularity" name="sort-by" value="Popularity" checked>
+                            <label for="popularity">Popularity</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="rating" name="sort-by" value="Rating">
+                            <label for="rating">Rating: High to Low</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="cost-type-1" name="sort-by" value="cost-l-h">
+                            <label for="cost-type-1">Cost: Low to High</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="cost-type-2" name="sort-by" value="cost-h-l">
+                            <label for="cost-type-2">Cost: High to Low</label>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Clear All</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <header id="header-list">
         <div class="offcanvas offcanvas-start" id="demo" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
@@ -96,13 +178,13 @@
                <button type="submit"> <i class="bi bi-search"></i></button>
            </form>
            <div class="filter-my">
-            <div class="filters" type="button"><i class="bi bi-funnel-fill"></i> Filter</div>
+            <div class="filters" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><i class="bi bi-funnel-fill"></i> Filter</div>
             <div class="filters" type="button"><i class="bi bi-arrow-down-up"></i> Delivery time</div>
             <div class="filters" type="button">Rating 4.0+</div>
             <div class="filters" type="button">Pure veg</div>
-            <div class="filters" type="button">Cuisine <i class="bi bi-caret-down-fill"></i></div>
-            <div class="filters" type="button">More filter <i class="bi bi-caret-down-fill"></i></div>
-           </div>
+            <div class="filters" type="button">Cuisine <i class="bi bi-chevron-down"></i></div>
+            <div class="filters" type="button">More filter <i class="bi bi-chevron-down"></i></div>
+           </div>  
        </div>
        <div class="show-case-1">
          <h2 style="padding: 10px;">Inspiration for your first order</h2>
