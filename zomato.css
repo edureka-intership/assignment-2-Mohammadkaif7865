@@ -537,7 +537,7 @@ footer a {
 .offer-extra-mm {
     position: absolute;
     color: white;
-    background-color: rgb(190, 39, 185);
+    background-color: orange;
     padding: 5px;
     z-index: 2;
     top: 5%;
