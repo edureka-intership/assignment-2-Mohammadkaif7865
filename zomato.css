@@ -531,6 +531,20 @@ footer a {
     left: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: 12px;
+}
+
+.offer-extra-mm {
+    position: absolute;
+    color: white;
+    background-color: rgb(190, 39, 185);
+    padding: 5px;
+    z-index: 2;
+    top: 5%;
+    right: 0;
+    font-size: 12px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .dependable {
@@ -541,6 +555,7 @@ footer a {
     z-index: 2;
     top: 60%;
     left: 0;
+    font-size: 12px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
