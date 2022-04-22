@@ -326,6 +326,13 @@ footer a {
     left: 0px;
 }
 
+.filter-search-detail {
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+    padding: 10px;
+}
+
 .filter-my {
     display: flex;
     width: 100%;
@@ -608,7 +615,96 @@ footer a {
 }
 
 
+/*Modal css*/
+
+.modal-flex-body {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.filter-p-1 {
+    width: 30%;
+    background-color: rgb(243, 239, 239);
+}
+
+.filter-p-2 {
+    width: 60%;
+    padding: 10px;
+}
+
+.filter-p-1 h4 {
+    padding: 10px;
+}
+
+.filter-p-1 a {
+    color: black;
+}
+
+
 /* Details page */
+
+.restaurant-image {
+    display: grid;
+    grid-template-areas: 'pic1 pic1 pic1 pic2 pic3 ' 'pic1 pic1 pic1 pic4 no-pic';
+    max-width: 1100px;
+    width: 100%;
+    gap: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+.pic-item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    filter: brightness(0.85);
+    border-radius: 10px;
+}
+
+.pic-item:hover {
+    opacity: 1.23;
+    filter: brightness(1.1);
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out 0s, opacity 1.63s ease 0s, filter 0.4s ease 0s;
+}
+
+.pic1 {
+    grid-area: pic1;
+    overflow: hidden;
+}
+
+.pic2 {
+    grid-area: pic2;
+    overflow: hidden;
+}
+
+.pic3 {
+    grid-area: pic3;
+    overflow: hidden;
+    position: relative;
+}
+
+.pic4 {
+    grid-area: pic4;
+    overflow: hidden;
+}
+
+.no-pic {
+    position: relative;
+    grid-area: no-pic;
+    overflow: hidden;
+}
+
+.my-add-photo {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 20%;
+    color: black;
+    font-size: calc(10px + 0.5vw);
+}
 
 @media screen and (min-width: 769px) {
     #my-nav-bar {
@@ -637,6 +733,9 @@ footer a {
 @media screen and (max-width: 600px) {
     .p-i-to {
         width: 48%;
+    }
+    .restaurant-image {
+        grid-template-areas: 'pic1 pic1 pic1 pic1' 'pic2 pic2 pic4 pic4' 'pic3 pic3 no-pic no-pic';
     }
 }
 
