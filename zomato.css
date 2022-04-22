@@ -607,6 +607,9 @@ footer a {
     border-bottom-left-radius: 5px;
 }
 
+
+/* Details page */
+
 @media screen and (min-width: 769px) {
     #my-nav-bar {
         display: none;
