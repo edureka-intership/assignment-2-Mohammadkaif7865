@@ -703,7 +703,7 @@ footer a {
     top: 40%;
     left: 20%;
     color: black;
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(15px + 0.5vw);
 }
 
 @media screen and (min-width: 769px) {
