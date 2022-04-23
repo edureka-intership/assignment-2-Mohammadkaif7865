@@ -728,6 +728,7 @@ footer a {
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 2;
 }
 
 .color-red {
@@ -739,12 +740,11 @@ footer a {
 }
 
 .rest-header-review {
-    float: right;
-    border-bottom: 2px solid grey;
     margin: 5px;
 }
 
 .rest-nav {
+    background-color: white;
     display: flex;
     width: 100%;
     height: 65px;
@@ -752,37 +752,61 @@ footer a {
     padding: 5px;
     margin: auto;
     max-width: 1100px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    overflow: hidden;
+    position: sticky;
+    top: 85px;
+    left: 0;
+    z-index: 2;
 }
 
-
-/* width */
-
-.rest-nav::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-/* Track */
-
-.rest-nav::-webkit-scrollbar-track {
-    background: white;
-}
-
-
-/* Handle */
-
-.rest-nav::-webkit-scrollbar-thumb {
-    background: white;
+.restaurant-name-info a {
+    color: rgb(94, 88, 88);
 }
 
 .rest-nav-item {
     font-size: 25px;
     padding: 10px;
     white-space: nowrap;
+}
+
+.rest-nav-active {
+    border-bottom: 5px solid red;
+}
+
+.food-cat-all {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.cat {
+    width: 30%;
+    position: sticky;
+    top: 140px;
+    left: 0;
+    background-color: white;
+    text-align: left;
+    font-size: 18px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.cat p {
+    margin-top: 10px;
+}
+
+.menu-active {
+    border-right: 5px solid red;
+    background-image: linear-gradient(to right, white, rgb(248, 212, 212));
+    color: red;
+}
+
+.food-all {
+    width: 70%;
+    padding: 10px;
 }
 
 @media screen and (min-width: 769px) {
@@ -807,14 +831,14 @@ footer a {
     .p-i-to-2 {
         width: 48%;
     }
-    .restaurant-image {
-        grid-template-areas: 'pic1 pic1 pic1 pic2' 'pic1 pic1 pic1 pic4' 'pic3 pic3 no-pic no-pic';
-    }
 }
 
 @media screen and (max-width: 600px) {
     .p-i-to {
         width: 48%;
+    }
+    .restaurant-image {
+        grid-template-areas: 'pic1 pic1 pic1 pic2' 'pic1 pic1 pic1 pic4' 'pic3 pic3 no-pic no-pic';
     }
 }
 
