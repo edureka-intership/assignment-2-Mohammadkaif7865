@@ -700,10 +700,11 @@ footer a {
 .my-add-photo {
     position: absolute;
     z-index: 2;
+    width: 100%;
     top: 40%;
-    left: 20%;
+    text-align: center;
     color: black;
-    font-size: calc(15px + 0.5vw);
+    font-size: calc(20px + 0.5vw);
 }
 
 @media screen and (min-width: 769px) {
@@ -728,14 +729,14 @@ footer a {
     .p-i-to-2 {
         width: 48%;
     }
+    .restaurant-image {
+        grid-template-areas: 'pic1 pic1 pic1 pic2' 'pic1 pic1 pic1 pic4' 'pic3 pic3 no-pic no-pic';
+    }
 }
 
 @media screen and (max-width: 600px) {
     .p-i-to {
         width: 48%;
-    }
-    .restaurant-image {
-        grid-template-areas: 'pic1 pic1 pic1 pic1' 'pic2 pic2 pic4 pic4' 'pic3 pic3 no-pic no-pic';
     }
 }
 
