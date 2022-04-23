@@ -719,11 +719,70 @@ footer a {
 }
 
 .address-rest {
-    width: 65%;
+    width: 100%;
+    overflow: hidden;
 }
 
-.review-rest-details {
-    width: 30%;
+.rest-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.color-red {
+    color: red;
+}
+
+.border-2-grey {
+    border: 2px solid rgb(211, 204, 204);
+}
+
+.rest-header-review {
+    float: right;
+    border-bottom: 2px solid grey;
+    margin: 5px;
+}
+
+.rest-nav {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    color: grey;
+    padding: 5px;
+    margin: auto;
+    max-width: 1100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+
+/* width */
+
+.rest-nav::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+.rest-nav::-webkit-scrollbar-track {
+    background: white;
+}
+
+
+/* Handle */
+
+.rest-nav::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+.rest-nav-item {
+    font-size: 25px;
+    padding: 10px;
+    white-space: nowrap;
 }
 
 @media screen and (min-width: 769px) {
