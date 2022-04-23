@@ -343,15 +343,12 @@ footer a {
     max-width: 1100px;
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
 }
 
 
 /* width */
 
 .filter-my::-webkit-scrollbar {
-    width: 10px;
     display: none;
 }
 
