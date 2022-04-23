@@ -728,7 +728,7 @@ footer a {
     top: 0;
     left: 0;
     background-color: white;
-    z-index: 2;
+    z-index: 4;
 }
 
 .color-red {
@@ -777,7 +777,6 @@ footer a {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 10px;
     width: 100%;
     max-width: 1100px;
 }
