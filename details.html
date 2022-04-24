@@ -22,6 +22,8 @@
         referrerpolicy="no-referrer" />
     <!--My css-->
     <link rel="stylesheet" href="zomato.css">
+    <!--My script-->
+    <script src="myScript.js"></script>
     <title>Zomato</title>
     <style>
 
@@ -288,230 +290,41 @@
               </a>
              </div>
              <div class="food-all">
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
+                <div class="rest-item-card">
+                    <div class="image-section-left">
+                       <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
+                       <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
+                   </div>
+                   <div class="dis-section-right">
+                       <button class="make-it-on" onclick="Add_check()">
+                           <i class="bi bi-plus-lg" id="check-not-check"></i>
+                       </button>
+                       <p><b>Crab in oyster sauce</b></p>
+                       <p>
+                          
+                           <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
+                           <i class="bi bi-star-fill g-g-old"></i>
+                           <i class="bi bi-star-fill g-g-old"></i>
+                           <i class="bi bi-star-fill g-g-old"></i>
+                           <i class="bi bi-star-fill g-g-old"></i>
+                           <i class="bi bi-star-half g-g-old"></i>
+                           <span>234 votes</span>
+                       </p>
+                       <p>
+                           ₹400 per plate
+                       </p>
+                       <p>
+                           Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
+                       </p>
                     </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="rest-item-card">
-                     <div class="image-section-left">
-                        <img src="https://i.ibb.co/6Z38mXh/crab.jpg" alt="img" id="ti-ti">
-                        <img src="https://img.icons8.com/color/25/000000/non-vegetarian-food-symbol.png" alt="img" class="set-it-up">
-                    </div>
-                    <div class="dis-section-right">
-                        <button class="btn btn-light make-it-on">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                        <p><b>Crab in oyster sauce</b></p>
-                        <p>
-                           
-                            <!-- <img src="https://img.icons8.com/color/30/000000/vegetarian-food-symbol.png" alt="img"> -->
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-half g-g-old"></i>
-                            <span>234 votes</span>
-                        </p>
-                        <p>
-                            ₹400 per plate
-                        </p>
-                        <p>
-                            Crab Masala Fry is a fragrant medley of spices and aromatics. Its spicy punch is set off deliciously by the sweet crab meat.
-                        </p>
-                     </div>
-                 </div>
+                </div> 
+                
+                
+                
+                
+                
+                
+                
              </div>
          </div>
        </div>

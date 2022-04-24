@@ -880,7 +880,7 @@ footer a {
         grid-template-areas: 'pic1 pic1 pic1 pic2' 'pic1 pic1 pic1 pic4' 'pic3 pic3 no-pic no-pic';
     }
     .cat {
-        font-size: 15px;
+        display: none;
     }
     .rest-nav {
         font-size: 15px;
@@ -888,12 +888,18 @@ footer a {
     .rest-item-card {
         font-size: 12px;
     }
+    .food-all {
+        width: 100%;
+    }
     .image-section-left {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
     .make-it-on {
         font-size: 20px;
+    }
+    .user-and-restaurant {
+        font-size: 5px;
     }
 }
 
