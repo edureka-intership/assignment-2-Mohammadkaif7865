@@ -712,6 +712,38 @@ footer a {
     margin: auto;
 }
 
+.cart {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    color: rgb(221, 217, 217);
+    margin-right: 10px;
+}
+
+.grey-color {
+    color: grey;
+}
+
+.cart-logo {
+    position: relative;
+}
+
+.cart-counts {
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 25px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
 .restaurant-name-info p {
     margin: 5px;
 }
@@ -804,6 +836,7 @@ footer a {
 .food-all {
     width: 70%;
     padding: 10px;
+    position: relative;
 }
 
 .rest-item-card {
@@ -855,11 +888,12 @@ footer a {
 
 .make-it-on {
     color: green;
-    padding: 5px;
+    text-align: center;
     float: right;
     font-size: 30px;
     border: 2px solid green;
     width: 50px;
+    height: 50px;
 }
 
 @media screen and (min-width: 769px) {

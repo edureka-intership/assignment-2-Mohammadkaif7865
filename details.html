@@ -202,6 +202,10 @@
        </div>
        <div class="restaurant-name-info">
           <div class="rest-header">
+              <div class="cart">
+                  <span class="cart-counts" id="cart-counts">0</span>
+                <i class="bi bi-cart2" class="cart-logo"></i>
+              </div>
             <h1>Oomah !!! restaurant</h1>
 
           <div style="padding-top: 10px; padding-bottom: 10px;">
@@ -259,38 +263,38 @@
              <div class="cat">
               <p><b>Top Recommended</b></p>
               <a href="#u150">
-                <p class="menu-active">Under Rs150</p>
+                <p id="nav-item-1">Under Rs150</p>
               </a>
               <a href="#thali-3">
-                  <p>Thali</p>
+                  <p id="nav-item-2">Thali</p>
                 </a>
                 <a href="#pure-veg">
-                    <p>Pure Veg</p>
+                    <p id="nav-item-3">Pure Veg</p>
                 </a>
                 <a href="#non-veg">
-                    <p>Non Veg</p>
+                    <p id="nav-item-4">Non Veg</p>
                 </a>
                 <a href="#refreshment">
-                    <p>Refreshment</p>
+                    <p id="nav-item-5">Refreshment</p>
                 </a>
                 <a href="#snacks">
-                  <p>Snacks</p>
+                  <p id="nav-item-6">Snacks</p>
                 </a>
               <a href="#breakfast">
-                <p>Breakfast</p>
+                <p id="nav-item-7">Breakfast</p>
               </a>
               <a href="#lunch">
-                <p>Lunch</p>
+                <p id="nav-item-8">Lunch</p>
               </a>
               <a href="#dinner">
-                <p>Dinner</p>
+                <p id="nav-item-9">Dinner</p>
               </a>
               <a href="#desert">
-                <p>Deserts</p>
+                <p id="nav-item-10">Deserts</p>
               </a>
              </div>
              <div class="food-all">
-                <div class="food-all-cat">
+                <div class="food-all-cat" onmouseover="red_it(1);" onmouseout="un_red_it(1);">
                     <h4>Under Rs150</h4>                 
                     <div class="rest-item-card" id="u150">
                         <div class="image-section-left">
@@ -461,7 +465,7 @@
                         </div>
                     </div>                  
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(2);" onmouseout="un_red_it(2);">
                     <h4>Thali</h4>
                     <div class="rest-item-card" id="thali-3">
                         <div class="image-section-left">
@@ -508,7 +512,7 @@
                             <i class="bi bi-star-fill g-g-old"></i>
                             <i class="bi bi-star-fill g-g-old"></i>
                             <i class="bi bi-star-half g-g-old"></i>
-                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill grey-color"></i>
                             <span>1,254 votes</span>
                         </p>
                         <p>
@@ -536,7 +540,7 @@
                             <i class="bi bi-star-fill g-g-old"></i>
                             <i class="bi bi-star-fill g-g-old"></i>
                             <i class="bi bi-star-fill g-g-old"></i>
-                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill grey-color"></i>
                             <span>11,254 votes</span>
                         </p>
                         <p>
@@ -632,7 +636,7 @@
                         </div>
                     </div>                  
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(3);" onmouseout="un_red_it(3);">
                     <h4>Pure-veg</h4>
                     <div class="rest-item-card" id="pure-veg">
                         <div class="image-section-left">
@@ -743,7 +747,7 @@
                         </div>
                     </div>                                
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(4);" onmouseout="un_red_it(4);">
                     <h4>Non-veg</h4>
                     <div class="rest-item-card" id="non-veg">
                         <div class="image-section-left">
@@ -886,7 +890,7 @@
                         </div>
                     </div>                 
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(5);" onmouseout="un_red_it(5);">
                     <h4>Refreshment</h4>
                     <div class="rest-item-card">
                         <div class="image-section-left" id="refreshment">
@@ -1001,7 +1005,7 @@
                         </div>
                     </div>                                 
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(6);" onmouseout="un_red_it(6);">
                     <h4>Snacks</h4>
                     <div class="rest-item-card" id="snacks">
                         <div class="image-section-left">
@@ -1116,7 +1120,7 @@
                         </div>
                     </div>                                                     
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(7);" onmouseout="un_red_it(7);">
                     <h4>Breakfast</h4>
                     <div class="rest-item-card" id="breakfast">
                         <div class="image-section-left">
@@ -1148,7 +1152,7 @@
                     </div>                                 
                                                    
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(8);" onmouseout="un_red_it(8);">
                     <h4>Lunch</h4>
                     <div class="rest-item-card" id="lunch">
                         <div class="image-section-left">
@@ -1180,7 +1184,7 @@
                     </div>                                 
                                                    
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(9);" onmouseout="un_red_it(9);">
                     <h4>Dinner</h4>
                     <div class="rest-item-card" id="dinner">
                         <div class="image-section-left">
@@ -1212,7 +1216,7 @@
                     </div>                                 
                                                    
                 </div> 
-                <div class="food-all-cat">
+                <div class="food-all-cat"  onmouseover="red_it(10);" onmouseout="un_red_it(10);">
                     <h4>Deserts</h4>
                     <div class="rest-item-card" id="desert">
                         <div class="image-section-left">
