@@ -831,7 +831,6 @@ footer a {
     z-index: 2;
     background-color: white;
     padding: 10px;
-    border-bottom: 2px solid rgb(192, 188, 188);
 }
 
 .image-section-left {
@@ -845,6 +844,7 @@ footer a {
     top: 0;
     right: 0;
     z-index: 1;
+    background-color: white;
 }
 
 .dis-section-right {
