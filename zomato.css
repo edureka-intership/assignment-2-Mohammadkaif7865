@@ -753,7 +753,7 @@ footer a {
     position: sticky;
     top: 83px;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     font-size: 25px;
 }
 
@@ -818,6 +818,20 @@ footer a {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.food-all-cat {
+    width: 100%;
+}
+
+.food-all-cat h4 {
+    position: sticky;
+    top: 140px;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid rgb(192, 188, 188);
 }
 
 .image-section-left {
