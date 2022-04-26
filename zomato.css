@@ -846,13 +846,6 @@ footer a {
     margin-top: 10px;
 }
 
-#ti-ti {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .food-all-cat {
     width: 100%;
 }
@@ -870,6 +863,7 @@ footer a {
     position: relative;
     width: 150px;
     height: 150px;
+    overflow: hidden;
 }
 
 .set-it-up {
